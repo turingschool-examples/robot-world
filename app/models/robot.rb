@@ -8,4 +8,8 @@ class Robot
     @city = robot_params["city"]
   end
 
+  def save
+
+  end
+
 end
