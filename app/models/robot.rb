@@ -1,11 +1,13 @@
 require 'sqlite3'
 
 class Robot
+  attr_reader :name, :city, :id
   def initialize(robot_params)
     @database = SQLite3::Database.new('db/robot_world_development.db')
     @database.results_as_hash = true
     @name = robot_params["name"]
     @city = robot_params["city"]
+    @id = robot_params["id"] if robot_params["id"]
   end
 
   def save
@@ -13,6 +15,8 @@ class Robot
   end
 
   def self.all
+    database = SQLite3::Database.new('db/robot_world_development.db')
+    database.results_as_hash = true
     robots = database.execute("SELECT * FROM robots")
     robots.map do |robot|
       Robot.new(robot)

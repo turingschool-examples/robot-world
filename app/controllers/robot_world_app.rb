@@ -22,5 +22,9 @@ class RobotWorldApp < Sinatra::Base
     redirect '/robots'
   end
 
+  get '/robots/:id' do
+    @robot = Robot.find(params[:id])
+    erb :individual
+  end
 end
 
