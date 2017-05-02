@@ -16,8 +16,10 @@ class RobotWorldApp < Sinatra::Base
   end
 
   post '/robots' do
-
+    robot = Robot.new(params[:robot])
+    robot.save
+    redirect '/robots'
   end
-   
+
 end
 
