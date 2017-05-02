@@ -1,3 +1,12 @@
 <h1>My Robots</h1>
 
-<p>No Robots yet</p>
+<% @tasks.each do |task| %>
+  <h3><a href="/robots/<%= robot.id %>"><%= robot.name %></a><h3>
+    <p><%= robot.city %></p>
+    <a href="robots/<%= robot.id %>/edit">Edit</a>
+    <form action="/robots/<%= robot.id %>" method="POST">
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" value="delete"/>
+    </form>
+<% end %>
+  
