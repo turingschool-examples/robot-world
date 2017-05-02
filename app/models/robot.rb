@@ -12,4 +12,11 @@ class Robot
     @database.execute("INSERT INTO robots (name, city) VALUES (?, ?);", @name, @city)
   end
 
+  def self.all
+    robots = database.execute("SELECT * FROM robots")
+    robots.map do |robot|
+      Robot.new(robot)
+    end
+  end
+
 end
