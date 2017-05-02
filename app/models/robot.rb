@@ -9,7 +9,7 @@ class Robot
   end
 
   def save
-
+    @database.execute("INSERT INTO robots (name, city) VALUES (?, ?);", @name, @city)
   end
 
 end
