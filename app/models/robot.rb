@@ -26,7 +26,7 @@ class Robot
   def self.find(id)
     database = SQLite3::Database.new('db/robot_world_development.db')
     database.results_as_hash = true
-    robot = database.execute("SELECT * FROM robots where id = ?", id).first
+    robot = database.execute("SELECT * FROM robots WHERE id = ?", id).first
     Robot.new(robot)
   end 
 
