@@ -12,6 +12,7 @@ class RobotWorldApp < Sinatra::Base
   end
 
   get '/robots' do
+    @robots = Robot.all
     erb :index
   end
 end
