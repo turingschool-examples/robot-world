@@ -8,6 +8,7 @@ class RobotWorldApp < Sinatra::Base
   # end
 
   get '/robots' do
+    @robots = Robot.all
     erb :index
   end
 
@@ -16,8 +17,9 @@ class RobotWorldApp < Sinatra::Base
   end
 
   post '/robots' do
-    robot = Robot.new(params[:robot])
-    robot.save
+    @robot = Robot.new(params[:robot])
+    @robot.save
+    require 'pry'; binding pry
     redirect '/robots'
   end
 end
