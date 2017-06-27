@@ -37,4 +37,20 @@ class Robot
     robot = @database.execute("SELECT * FROM robots WHERE id = ?", id).first
     Robot.new(robot)
   end
+
+  def self.update(id, robot_params)
+    database.execute("UPDATE robots
+                      SET name = ?,
+                          city = ?,
+                          state = ?,
+                          department = ?
+                      WHERE id = ?;",
+                      robot_params[:name],
+                      robot_params[:city],
+                      robot_params[:state],
+                      robot_params[:department],
+                      id)
+
+    Robot.find(id)
+  end
 end
