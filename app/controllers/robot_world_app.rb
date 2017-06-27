@@ -6,6 +6,21 @@ class RobotWorldApp < Sinatra::Base
   get '/robots' do
     erb :index
   end
-end
 
-#bob
+  get '/' do
+    erb :dashboard
+  end
+
+
+
+
+
+
+
+
+
+
+
+
+
+end
