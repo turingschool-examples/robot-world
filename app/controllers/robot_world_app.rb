@@ -11,6 +11,10 @@ class RobotWorldApp < Sinatra::Base
     erb :dashboard
   end
 
+  get '/robots/new' do
+    erb :new_robot
+  end
+
 
 
 
