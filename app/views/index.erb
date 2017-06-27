@@ -2,14 +2,14 @@
 
 <h1>My Robots</h1>
 
-<a href="#">New Robot</a>
+<a href="/robots/new">New Robot</a>
 
 <% @robots.each do |robot| %>
-  <h3><a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
+  <h3><a href="/robots/<%= robot.name %>"><%= robot.name %></a></h3>
   <p><%= robot.city %>, <%= robot.state %></p>
   <p><%= robot.department %></p>
-  <a href="/robots/<%= robot.id  %>/edit">Edit</a>
-  <form action="/robots/<%= robot.id %>" method="POST">
+  <a href="/robots/<%= robot.name  %>/edit">Edit</a>
+  <form action="/robots/<%= robot.name %>" method="POST">
     <input type="hidden" name="_method" value="DELETE">
     <input type="submit" value="delete"/>
   </form>
