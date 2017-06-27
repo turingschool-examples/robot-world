@@ -39,7 +39,9 @@ class Robot
   end
 
   def self.update(id, robot_params)
-    database.execute("UPDATE robots
+    @database = SQLite3::Database.new('db/robot_world_development.db')
+    @database.results_as_hash = true
+    @database.execute("UPDATE robots
                       SET name = ?,
                           city = ?,
                           state = ?,
@@ -53,4 +55,12 @@ class Robot
 
     Robot.find(id)
   end
+
+  def self.destroy(id)
+    @database = SQLite3::Database.new('db/robot_world_development.db')
+    @database.results_as_hash = true
+    @database.execute("DELETE FROM robots
+                      WHERE id = ?;", id)
+  end
+
 end
