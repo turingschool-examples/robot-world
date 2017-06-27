@@ -21,6 +21,7 @@ class RobotWorldApp < Sinatra::Base
     robot = Robot.new(params[:robot])
     robot.save
     redirect '/robots'
+    erb :layout
   end
 
   get '/robots/:id' do
@@ -41,6 +42,10 @@ class RobotWorldApp < Sinatra::Base
   delete '/robots/:id' do
     Robot.destroy(params[:id].to_i)
     redirect 'robots'
+  end
+
+  not_found do
+    erb :error
   end
 
 end
