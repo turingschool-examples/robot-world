@@ -6,5 +6,13 @@ class RobotWorldApp < Sinatra::Base
   get '/robots' do
     erb :index
   end
-end
 
+  get '/robots/:id' do
+    @robot = Robot.find(params[:id])
+    erb :show
+  end
+
+  not_found do
+    erb :error
+  end
+end
