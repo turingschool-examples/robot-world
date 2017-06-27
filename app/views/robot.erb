@@ -1,4 +1,17 @@
+<form action='<%= @robot.id %>/edit' method='GET'>
+  <input type='hidden' name='_method' value="PATCH">
+  <input type='submit' value='EDIT'>
+</form>
+
 <h3> <%= @robot.name %></h3>
 <p> <%= @robot.city %></p>
 <p> <%= @robot.state %></p>
 <p> <%= @robot.department %></p>
+
+<form action='<%= @robot.id %>' method='POST'>
+  <input type='hidden' name='_method' value="DELETE">
+  <input type='submit' value='DELETE'>
+</form>
+
+
+<h4><a href="/robots">back to My Robots</a></h4>

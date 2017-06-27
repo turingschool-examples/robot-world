@@ -9,6 +9,10 @@ class RobotWorldApp < Sinatra::Base
     erb :index
   end
 
+  get '/' do
+    redirect '/robots'
+  end
+
   get '/robots/new' do
     erb :create_robot
   end
