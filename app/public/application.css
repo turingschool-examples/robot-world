@@ -7,20 +7,31 @@
 
   a {
     font-family: futura;
+    text-decoration: none;
+    color: red;
   }
 
   body {
     background-color: #AFC6F0;
   }
 
+  img {
+    width: 60px;
+    height: 60px;
+  }
+
   hr {
-    margin-right: 1128px;
+    align-self: center;
     border-color: red;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: -7px;
   }
 
   h1 {
     color: red;
-    font-size: 50px;
+    text-align: center;
+    font-size: 75px;
     font-family: Futura;
     line-height: 12px;
   }
@@ -29,12 +40,37 @@
     font-family: futura;
     background-color: #AFD0F0;
     color: white;
-    margin: 7px -2px;
+    margin: 7px 1px;
+
   }
 
   input[type="submit"]:hover{
     border: 2px solid black;
     border-radius: 5px;
+  }
+
+  .robot {
+    border: 1px solid black;
+    margin: 15px;
+    margin-right: 520px;
+    margin-left: 520px;
+    text-align: center;
+    align-self: center;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+  li {
+      display: inline;
+      color: black;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-family: Futura;
+      font-size: 25px;
   }
 
 

@@ -1,7 +1,16 @@
 <h1>My Robots</h1>
 <hr>
+<br>
+<ul>
+<li><a href="/robots">Home</a></li>
+<li><a href="/robots/new">Create</a></li>
+</ul>
+<br>
 
 <% @robots.each do |robot| %>
+
+<div class="robot">
+  <img src="https://robohash.org/cass">
   <h3><a href="/robots/<%= robot.id %>"><%= robot.name.capitalize %></a></h3>
   <p><%= robot.city%>, <%= robot.state %></p>
     <p><%= robot.department %></p>
@@ -10,4 +19,5 @@
   <input type="hidden" name="_method" value="DELETE">
   <input type="submit" value="delete"/>
 </form>
+</div>
 <% end %>
