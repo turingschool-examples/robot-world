@@ -1,1 +1,51 @@
-<h1>My Robots</h1>
+
+
+
+
+
+  <body>
+    <div class="navbar navbar-inverse bg-inverse">
+      <div class="container d-flex justify-content-between">
+        <a href="/" class="navbar-brand">Back to Robots Dashboard</a>
+      </div>
+    </div>
+
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Robot World</h1>
+        <p class="lead text-muted">
+          In the post-apocalyptic year of 2048, these robots will wage a
+          war for global domination. Every new robot that is created, will help
+          get these machines closer to taking over Planet Htrae.
+        </p>
+        <p>
+          <a href="/robots/new" class="btn btn-primary btn-danger btn-lg">
+            Create a New Robot</a>
+        </p>
+      </div>
+    </section>
+
+    <div class="album text-muted">
+      <div class="container">
+        <div class="row">
+            <% @robots.each do |robot| %>
+            <div class="card">
+            <img src="https://robohash.org/buddy.png" alt="Image of a Robot">
+            <h3><a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
+            <p><%= robot.city %></p>
+            <p><%= robot.state %></p>
+            <p><%= robot.department %></p>
+            <div class="btn btn-primary btn-lg btn-info" role="button">
+              <a href="/robots/<%= robot.id %>/edit">Edit</a>
+            </div>
+          </div>
+        <% end %>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p>&copy; 2048 Robot World <a href="#">Back to top</a></p>
+      </div>
+    </footer>

@@ -1,0 +1,29 @@
+
+<div class="jumbotron">
+<div class="container-fluid" align="center">
+    <img src="https://robohash.org/buddy.png" alt="Image of a Robot">
+
+    <h1><%= @robot.name %></h1>
+    <p><%= @robot.city %></p>
+    <p><%= @robot.state %></p>
+    <p><%= @robot.department %></p>
+
+    <div class="btn btn-primary btn-lg btn-success" role="button">
+      <a href="/robots/<%= @robot.id %>/edit">Edit</a>
+    </div>
+
+    <div>
+      <form class="" action="/robots/<%= @robot.id %>" method="POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <input  class="btn btn-primary btn-lg btn-danger"role="button" type="submit" name="" value="delete">
+      </form>
+    </div>
+    
+    <div class="btn btn-primary btn-lg btn-info">
+      <a href="/robots">Back to Dashboard</a>
+    </div>
+
+  </div>
+</div>
+
+</div>
