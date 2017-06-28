@@ -1,1 +1,19 @@
 
+.title {
+  color:#00BFFF;
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+}
+
+body h1, h2, h3, p {
+  font-family: 'Amaranth', sans-serif;
+}
+
+
+form {
+  font-family: 'Amaranth', sans-serif;
+}
+
+nav {
+  background-color: black;
+}

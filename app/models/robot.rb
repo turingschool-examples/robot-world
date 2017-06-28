@@ -12,7 +12,7 @@ class Robot
     @name = robot_params["name"]
     @city = robot_params["city"]
     @state = robot_params["state"]
-    @department = robot_params["name"]
+    @department = robot_params["department"]
     @database = SQLite3::Database.new('db/robots.db')
     @database.results_as_hash = true
   end
