@@ -2,7 +2,6 @@
 
 
   p {
-    color: green;
     font-family: futura;
     font-size: 50px;
   }
@@ -11,6 +10,11 @@
     font-family: futura;
     text-decoration: none;
     color: #E54549;
+  }
+
+  ul li :hover{
+    font-size: 35px;
+    color: yellow;
   }
 
   body {
@@ -70,6 +74,7 @@
     height: 80px;
     margin-bottom: -20px;
   }
+
 
   .robbie img {
     height: 400px;
