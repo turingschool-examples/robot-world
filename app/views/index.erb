@@ -1,1 +1,22 @@
-<h1>My Robots</h1>
+
+<head>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1> My Robots </h1>
+  </header 
+  <% @robots.each do |robot| %>
+    <h3><a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
+    <!-- <h1><%= robot.name %></h3> -->
+    <p><%= robot.city %></p>
+    <p><%= robot.state %></p>
+    <p><%= robot.department %></p>
+    <!-- <a href="/robots/<%= robot.id  %>/edit">Edit</a>
+    <form action="/robots/<%= robot.id %>" method="POST">
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" value="delete"/>
+    </form> -->
+  <% end %>
+</body>
