@@ -3,6 +3,10 @@
 <a href="/robots/new_robot">New Robot</a>
 
 <% @robot.each do |robot| %>
-  <p><a href="/robots/<%=robot.id%>"><%= robot.name %></a></p>
-  <a href="/robots//<%=robot.id%>/edit">Edit</a> 
+  <p><a href="/robots/<%= robot.id %>"><%= robot.name %></a></p>
+  <a href="/robots/<%= robot.id %>/edit">Edit</a>
+  <form action="/robots/<%= robot.id %>" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="delete"/>
+  </form>
 <%end%>
