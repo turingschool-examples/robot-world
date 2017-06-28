@@ -1,1 +1,31 @@
-<h1>My Robots</h1>
+<h1>Robots</h1>
+<hr>
+<br>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/robots/new">Create</a></li>
+</ul>
+<br>
+
+<div class="robbie">
+  <img src="https://robohash.org/hf">
+</div>
+
+<div class="robbie3">
+  <img src="https://robohash.org/farty">
+</div>
+
+<% @robots.each do |robot| %>
+
+<div class="robot">
+  <img src="https://robohash.org/YOU.png?set=set1&size=150x150">
+  <h3><a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
+  <p><%= robot.city%>, <%= robot.state %></p>
+    <p><%= robot.department %></p>
+    <a href="/robots/<%= robot.id  %>/edit">Edit</a>
+<form action="/robots/<%= robot.id %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="delete"/>
+</form>
+</div>
+<% end %>
