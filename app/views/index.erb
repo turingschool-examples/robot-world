@@ -2,10 +2,10 @@
 <html>
   <head>
     <link rel="stylesheet" href="/application.css">
-    <title>Robot World</title>
+    <title>Robo World</title>
   </head>
   <body>
-    <h1>My Robots</h1>
+    <h1>Robo Community</h1>
     <% @robots.each do |robot| %>
       <h3><a href="/robots/<%=robot.id %>"><%= robot.name %></a></h3>
       <p><%= robot.city %>, <%= robot.state %></p>
