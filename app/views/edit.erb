@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Edit Robot</title>
+    <link rel="stylesheet" href="application.css">
+  </head>
+<body>
+    <h1>Edit your Robot!</h1>
+    <form action='/robots/<%= @robot.id %>' method='POST'>
+      <input type="hidden" name="_method" value="PUT" />
+      <label>Insert Name</label>
+      <input type="text" name="robot[name]" value="<%= @robot.name%>"><br/>
+      <label>Insert City</label>
+      <input type="text" name="robot[city]" value="<%= @robot.city%>"><br/>
+      <label>Insert State</label>
+      <input type="text" name="robot[state]" value="<%= @robot.state%>"><br/>
+      <label>Insert Department</label>
+      <input type="text" name="robot[department]" value="<%= @robot.department%>"><br/>
+      <input type="submit"><br/>
+    </form>
+  </body>
+</html>

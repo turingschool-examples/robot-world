@@ -1,1 +1,15 @@
-<h1>My Robots</h1>
+<html>
+  <head>
+    <title>Index - My Robots</title>
+    <link rel="stylesheet" href="application.css">
+  </head>
+  <body>
+    <h1>My Robots</h1>
+
+    <h3><a href="/robots/new">Create a new Robot</a></h3>
+
+    <% @robots.each do |robot| %>
+      <h3><a href="/robots/<%= robot.id %>"> <%= robot.name %></a></h3>
+    <% end %>
+  </body>
+</html>
