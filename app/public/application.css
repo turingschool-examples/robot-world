@@ -1,1 +1,19 @@
+body {
+  background-image: url('http://www.anawalls.com/repic/image.php?src=http://www.anawalls.com/images/3d/robot-arms-head-wall-peek.jpg&h=800&w=1280');
+  font: sans-serif;
+}
 
+form {
+  color: black;
+  font-style: italic;
+  margin: 50px;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+table {
+  width: 30%;
+  text-align: center;
+}
