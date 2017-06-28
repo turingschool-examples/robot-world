@@ -61,6 +61,12 @@
     height: 60px;
   }
 
+  .robbie img {
+    height: 400px;
+    width: 400px;
+    margin-left: 60px;
+  }
+
 
   ul {
     list-style-type: none;
