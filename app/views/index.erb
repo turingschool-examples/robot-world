@@ -5,16 +5,9 @@
       <h1>My Robots</h1>
 
       <% @robots.each do |robot| %>
-      <h3>
-        <%= robot.name %>
-      </h3>
-      <p>
-        <%= robot.city %>,
-        <%= robot.state %>
-      </p>
-      <p>
-        <%= robot.department %>
-      </p>
+      <h3><%= robot.name %></h3>
+      <p><%= robot.city %>, <%= robot.state %></p>
+      <p><%= robot.department %></p>
 
       <form action="/robots/<%= robot.id %>/edit" method="get">
         <input type="submit" value="edit" name="Edit"/>
