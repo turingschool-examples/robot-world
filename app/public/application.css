@@ -2,10 +2,39 @@
 
   p {
     color: green;
+    font-family: futura;
+  }
+
+  a {
+    font-family: futura;
   }
 
   body {
     background-color: #AFC6F0;
+  }
+
+  hr {
+    margin-right: 1128px;
+    border-color: red;
+  }
+
+  h1 {
+    color: red;
+    font-size: 50px;
+    font-family: Futura;
+    line-height: 12px;
+  }
+
+  input[type=submit] {
+    font-family: futura;
+    background-color: #AFD0F0;
+    color: white;
+    margin: 7px -2px;
+  }
+
+  input[type="submit"]:hover{
+    border: 2px solid black;
+    border-radius: 5px;
   }
 
 
