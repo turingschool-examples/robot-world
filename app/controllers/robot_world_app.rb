@@ -39,4 +39,6 @@ class RobotWorldApp < Sinatra::Base
     Robot.destroy(id.to_i)
     redirect '/robots'
   end
+
+  #add all attributes, add styling, do some extensions
 end
