@@ -20,8 +20,8 @@
   hr {
     align-self: center;
     border-color: #E54549;
-    margin-left: 460px;
-    margin-right: 460px;
+    margin-left: 510px;
+    margin-right: 510px;
     margin-top: -7px;
   }
 
@@ -31,6 +31,13 @@
     font-size: 75px;
     font-family: Futura;
     line-height: 12px;
+  }
+
+  h2 {
+    color: #E54549;
+    font-size: 40px;
+    font-family: futura;
+    text-align: center;
   }
 
   input[type=submit] {
@@ -50,10 +57,12 @@
   .robot {
     border: 1px solid black;
     margin: 15px;
-    margin-right: 520px;
-    margin-left: 520px;
+    margin-right: 540px;
+    margin-left: 540px;
     text-align: center;
     align-self: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .robot img {
@@ -64,9 +73,19 @@
   .robbie img {
     height: 400px;
     width: 400px;
-    margin-left: 60px;
+    margin-left: 510px;
+    position: absolute;
+    bottom: 0px;
   }
 
+  label {
+    font-size: 20px;
+    position: absolute;
+  }
+
+  input[type="text"] {
+    margin-left: 100px;
+  }
 
   ul {
     list-style-type: none;

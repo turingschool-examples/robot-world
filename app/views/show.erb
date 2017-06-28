@@ -1,9 +1,15 @@
-<a href="/robots">Robot Index</a>
 
-<h1><%= @robot.name %></h1>
+<br>
+<br>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/robots">Robot Index</a></li>
+</ul>
+<div class="robot">
+  <h2><%= @robot.name %></h2>
 
-<p><%= @robot.city %></p>
+  <p><%= @robot.city%>, <%=@robot.state %></p>
 
-<p><%= @robot.state %></p>
 
-<p><%= @robot.department %></p>
+  <p><%= @robot.department %></p>
+</div>
