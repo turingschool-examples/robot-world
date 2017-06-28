@@ -1,0 +1,30 @@
+/*style.css*/
+.robot {
+  border-style: outset;
+  border-width: 5px;
+  display: inline-grid;
+  background: #EBEDED;
+  width: 20%;
+}
+.robo-pic {
+  width: 100px;
+  height: auto;
+}
+input {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 15px 45px;
+  font-size: 48px
+  font-family: monospace;
+  border: 2pt solid black;
+  width: 100px;
+}
+a {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 15px 45px;
+  font-size: 48px
+  font-family: monospace;
+  border: 2pt solid black;
+  width: 100px;
+}
