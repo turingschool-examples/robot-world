@@ -1,7 +1,9 @@
-<h1><%= @robot.name %></h1>
-
-<p><%= @robot.city %></p>
-<p><%= @robot.state %></p>
-<p><%= @robot.department %></p>
-<br/>
-<a href="/robots">All Robots</a>
+<div class="robot">
+  <h1><%= @robot.name %></h1>
+  <img src="https://robohash.org/<%= @robot.name %>.png">
+  <p><%= @robot.city %></p>
+  <p><%= @robot.state %></p>
+  <p><%= @robot.department %></p>
+  <br/>
+  <a href="/robots">All Robots</a>
+</div>
