@@ -1,9 +1,11 @@
 <!-- <head>
-  <title>My Robots</title>
-  <link rel="stylesheet" href="application.css">
+<title>My Robots</title>
+<link rel="stylesheet" href="application.css">
 </head> -->
 
 <!-- <h1>My Robots</h1> -->
+<div class="index-page">
+  
 <% @robots.each do |robot| %>
 <div class="robot">
   <img class="robo-pic "src="http://www.robohash.org/<%= robot.name %>"><br>
@@ -19,3 +21,4 @@
   </form>
 </div>
 <% end %>
+</div>

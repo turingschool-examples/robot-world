@@ -56,7 +56,7 @@ p {
 .robo-card {
   position: absolute;
   /*top: 50%;*/
-  left: 20%;
+  left: 245px;
   border-style: dashed;
   border-color: grey;
   border-radius: 20px;
@@ -66,4 +66,8 @@ p {
 .buttons-banner {
   margin-left: 250px;
   margin-top: 0px;
+}
+
+.index-page {
+  max-width: 850px;
 }
