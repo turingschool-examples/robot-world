@@ -1,14 +1,23 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="application.css">
+    <title>Robot World</title>
+  </head>
 
-<h1><%= @robot.name %></h1>
+  <body>
+    <h1><%= @robot.name %></h1>
 
-<p><%= @robot.city %></p>
-<p><%= @robot.state %></p>
-<p><%= @robot.department %></p>
+    <p><%= @robot.city %></p>
+    <p><%= @robot.state %></p>
+    <p><%= @robot.department %></p>
 
 
-<button><a href="/robots">Go Back to My Robots</a></button>
-<button><a href="/robots/<%= @robot.id %>/edit">Edit this Robot</a></button>
-<form action="/robots/<%= @robot.id %>" method="POST">
-  <input type="hidden" name="_method" value="DELETE">
-  <input type="submit" value="Delete this Robot"/>
-</form>
+    <button><a href="/robots">Go Back to My Robots</a></button>
+    <button><a href="/robots/<%= @robot.id %>/edit">Edit this Robot</a></button>
+    <form action="/robots/<%= @robot.id %>" method="POST">
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" value="Delete this Robot"/>
+    </form>
+  </body>
+
+</html>
