@@ -1,1 +1,22 @@
-<h1>My Robots</h1>
+<header class='index'>
+  <h1 class="list"> My Robots </h1>
+  <form action="/robots/new" method="get">
+  <input class="new_button" type="submit" value="create NEW robot"/>
+  </form>
+</header>
+
+<% @robots.each do |robot| %>
+<section class="robot">
+  <h4> <a href="/robots/<%= robot.id %>"> Name: <%= robot.name %> </a> </h4>
+  <p> City: <%= robot.city %> </p>
+  <p> State: <%= robot.state %> </p>
+  <p> Department: <%= robot.department %> </p>
+  <form action="/robots/<%=robot.id%>/edit" method="get">
+    <input class="submit" type="submit" value="edit robot"/>
+  </form>
+  <form action="/robots/<%= robot.id %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input class="delete" type="submit" value="delete"/>
+  </form>
+</section>
+<% end %>

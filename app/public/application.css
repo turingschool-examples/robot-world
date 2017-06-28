@@ -1,1 +1,96 @@
 
+body {
+  background-color: pink;
+}
+
+header {
+  display: inline-block;
+  box-sizing: border-box;
+  box-sizing: content-box;
+  box-sizing: padding-box;
+  margin-top: 150px;
+  height: 400px;
+  padding: 100px;
+}
+
+.dashboard {
+  font-size: 30px;
+  display: inline;
+  box-sizing: border-box;
+  box-sizing: content-box;
+  box-sizing: padding-box;
+  padding: 50px;
+  margin: 200px;
+  border-width: medium;
+  border-style: double;
+}
+
+.new {
+  display: inline-block;
+  box-sizing: border-box;
+  box-sizing: content-box;
+  box-sizing: padding-box;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 30px;
+}
+
+.submit {
+  display: inline;
+  box-sizing: border-box;
+  box-sizing: content-box;
+  box-sizing: padding-box;
+  width: 75px;
+  height: 30px;
+  background-color: green;
+  color: yellow;
+}
+
+.delete {
+  display: inline;
+  box-sizing: border-box;
+  box-sizing: content-box;
+  box-sizing: padding-box;
+  width: 75px;
+  height: 30px;
+  background-color: red;
+  color: yellow;
+}
+
+.robot {
+  display: block;
+}
+
+.new_button {
+    box-sizing: border-box;
+    box-sizing: content-box;
+    box-sizing: padding-box;
+    width: 150px;
+    height: 30px;
+    background-color: green;
+    color: yellow;
+}
+
+section {
+  font-size: 30px;
+  display: inline-block;
+  box-sizing: border-box;
+  box-sizing: content-box;
+  box-sizing: padding-box;
+  padding: 50px;
+  margin-bottom: 200px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-width: medium;
+  border-style: double;
+}
+
+.index {display: inline-block;
+        box-sizing: border-box;
+        box-sizing: content-box;
+        box-sizing: padding-box;
+        margin-top: 50px;
+        height: 200px;
+        padding: 80px;
+        }
