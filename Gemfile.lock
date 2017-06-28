@@ -2,14 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     coderay (1.1.1)
-    mail (2.6.6)
-      mime-types (>= 1.16, < 4)
     method_source (0.8.2)
-    mime-types (3.1)
-      mime-types-data (~> 3.2015)
-    mime-types-data (3.2016.0521)
-    pony (1.11)
-      mail (>= 2.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -31,7 +24,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  pony
   pry
   shotgun
   sinatra

@@ -73,9 +73,26 @@
   .robbie img {
     height: 400px;
     width: 400px;
-    margin-left: 510px;
-    position: absolute;
+    margin-left: 900px;
+    position: fixed;
     bottom: 0px;
+  }
+
+  .robbie2 img {
+    transform: rotate(180deg);
+    margin-left: 20px;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 0px;
+  }
+
+  .robbie3 img {
+    transform: rotate(90deg);
+    height: 400px;
+    width: 400px;
+    position: fixed;
+    left: 0px;
   }
 
   label {
