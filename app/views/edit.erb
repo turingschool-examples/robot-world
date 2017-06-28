@@ -1,0 +1,30 @@
+<div class="row">
+  <h2>Edit Robot</h2>
+</div>
+<div class="row">
+  <div class="btn-group robot-nav" role="group">
+    <a class="btn btn-default" href="/robots">Back to Robots</a>
+  </div>
+</div>
+<div class="row">
+  <form action="/robots/<%= @robot.id %>" method="post">
+    <input type="hidden" name="_method" value="PUT">
+    <div class="form-group">
+      <label>Name:</label>
+      <input type="text" class="form-control" name="robot[name]" value="<%= @robot.name %>">
+    </div>
+    <div class="form-group">
+      <label>City:</label>
+      <input type="text" class="form-control" name="robot[city]" value="<%= @robot.city %>">
+    </div>
+    <div class="form-group">
+      <label>State:</label>
+      <input type="text" class="form-control" name="robot[state]" value="<%= @robot.state %>">
+    </div>
+    <div class="form-group">
+      <label>Department:</label>
+      <input type="text" class="form-control" name="robot[department]" value="<%= @robot.department %>">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>

@@ -1,1 +1,32 @@
-<h1>My Robots</h1>
+<h1>My Robots</h1><br>
+<div class="btn-group robot-nav" role="group">
+  <a class="btn btn-default" href="/">Back to Dashboard</a>
+  <a class="btn btn-default" href="/robots/new">Add New Robot</a>
+</div>
+<% @robots.each do |robot| %>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3><a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item">City: <%= robot.city %></li>
+            <li class="list-group-item">State: <%= robot.state %></li>
+            <li class="list-group-item">Department: <%= robot.department %></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div class="btn-group pull-right" role="group">
+            <a class="btn btn-default" href="/robots/<%= robot.id %>/edit">Edit</a>
+            <form class="pull-right" action="/robots/<%= robot.id %>/delete" method="post">
+              <input type="hidden" name="_method" value="DELETE">
+              <button type="submit" class="btn btn-default">Delete</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

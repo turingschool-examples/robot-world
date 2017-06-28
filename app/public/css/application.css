@@ -1,0 +1,21 @@
+h1 {
+  margin-bottom: 5%;
+}
+
+.index-button{
+  width: 400px;
+  height: 250px;
+}
+
+.dashboard-row {
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+
+.robot-nav {
+  margin-bottom: 30px;
+}
+
+.robot-row {
+  margin-bottom: 30px;
+}
