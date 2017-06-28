@@ -1,0 +1,19 @@
+<head>
+  <title>Show Robot</title>
+  <link rel="stylesheet" href="/application.css">
+</head>
+
+<div class="robo-card">
+
+  <img class="robo-profile-pic" src="http://www.robohash.org/<%= @robot.name %>">
+  <h3><%= @robot.name %></h3>
+  <p><%= @robot.city %> - City</p>
+  <p><%= @robot.state %> - State</p>
+  <p><%= @robot.department %> - Department</p>
+
+  <button><a href="/robots/<%= @robot.id %>/edit">Edit this Robot</a></button>
+  <form action="/robots/<%= @robot.id %>" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete this Robot"/>
+  </form>
+</div>

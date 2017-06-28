@@ -1,1 +1,73 @@
+body {
+  font-family: 'Oswald', sans-serif;
+}
 
+h2 {
+  font-size: 200%;
+  margin-bottom: 2px;
+  margin-top: 5px;
+}
+
+h3 {
+  font-size: 300%;
+  margin: 2px;
+}
+
+p {
+  margin:2px;
+}
+.robo-pic {
+    border-style: solid;
+    border-width: thin;
+    border-color: grey;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 150px;
+    /*width: auto;*/
+    /*max-width: 50px;
+    max-height: 50px;*/
+}
+
+.robot {
+  border-style: dashed;
+  border-width: thin;
+  border-color: grey;
+  border-radius: 15px;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px;
+  padding-bottom: 5px;
+}
+
+.banner {
+    /*height: 150px;*/
+    width: 750px;
+}
+
+.robo-profile-pic {
+    border-style: solid;
+    border-width: thin;
+    height: 260px;
+    border-color: grey;
+    border-radius: 15px;
+}
+
+.robo-card {
+  position: absolute;
+  /*top: 50%;*/
+  left: 245px;
+  border-style: dashed;
+  border-color: grey;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.buttons-banner {
+  margin-left: 250px;
+  margin-top: 0px;
+}
+
+.index-page {
+  max-width: 850px;
+}
