@@ -1,10 +1,20 @@
-<h1>My Robots</h1>
-<% @tasks.each do |task| %>
-  <h3><a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
-  <p><%= task.description %></p>
-  <a href="/tasks/<%=task.id %>/edit">Edit</a>
-  <form action="/tasks/<%= task.id %>" method = "POST">
-    <input type="hidden" name="_method" value="DELETE">
-    <input type="submit" value="delete"/>
-  </form>
-<% end %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/application.css">
+    <title>Robot World</title>
+  </head>
+  <body>
+    <h1>My Robots</h1>
+    <% @robots.each do |robot| %>
+      <h3><a href="/robots/<%=robot.id %>"><%= robot.name %></a></h3>
+      <p><%= robot.city %>, <%= robot.state %></p>
+      <p><%= robot.department %></p>
+      <a href="/robots/<%= robot.id %>/edit">Edit</a>
+      <form action="/robots/<%= robot.id %>" method = "POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="delete" />
+      </form>
+    <% end %>
+  </body>
+</html>

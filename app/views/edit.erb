@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/application.css">
+    <title>Robot World</title>
+  </head>
+  <body>
+    <form action="/robots/<%= @robot.id %>" method="post">
+      <p>Edit</p>
+      <input type="hidden" name="_method" value="PUT" />
+      <input type="text" name="robot[name]" value= "<%= @robot.name %>" /><br/>
+      <textarea name="robot[city]"><%= @robot.city %></textarea><br/>
+      <textarea name="robot[state]"><%= @robot.state %></textarea><br/>
+      <textarea name="robot[department]"><%= @robot.department %></textarea><br/>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
