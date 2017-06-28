@@ -1,5 +1,8 @@
 <h1>My Robots</h1>
 
+<a href="/robots/new_robot">New Robot</a>
+
 <% @robot.each do |robot| %>
-  <p><a href="/robot/<%=robot.id%>"><%= robot.name %></a></p>
+  <p><a href="/robots/<%=robot.id%>"><%= robot.name %></a></p>
+  <a href="/robots//<%=robot.id%>/edit">Edit</a> 
 <%end%>
