@@ -5,4 +5,9 @@
   <p><%= robot.city %></p>
   <p><%= robot.state %></p>
   <p><%= robot.department %></p>
+  <a href="/robots/<%= robot.id %>/edit">Edit</a>
+  <form action="/robots/<%= robot.id %>" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="delete"/>
+  </form>
 <% end %>
