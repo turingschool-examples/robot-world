@@ -1,1 +1,23 @@
 
+header {
+  background: #92E0E5;
+  color: white;
+  height: 50px;
+  padding: 0 25px;
+}
+
+header h1 {
+  float: middle;
+  text-align: center;
+}
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-image: url("http://i1.mirror.co.uk/incoming/article8012018.ece/ALTERNATES/s615/Terminator.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
