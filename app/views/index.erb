@@ -1,1 +1,20 @@
-<h1>My Robots</h1>
+<div class = "container text-center">
+  <div class = "row">
+    <div class = "col-md-12 page-header">
+    <h1>My Robots</h1>
+  </div>
+</div>
+  <div class = "row">
+<% @robots.each do |robot| %>
+  <div class = "col-md-3">
+    <h3><%= robot.name %></h3>
+    <p><%="#{robot.city}, #{robot.state}"%></p>
+    <p><%= robot.department %></p>
+    <form action = "robots/<%= robot.id %>" method = "POST">
+      <input type ="hidden" name = "_method" value = "DELETE">
+      <input class="btn btn-danger" type ="submit" value ="delete">
+    </form>
+  </div>
+<% end %>
+</div>
+</div>
