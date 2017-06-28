@@ -1,14 +1,10 @@
 # Robot World
+### A Sinatra Web application
 
 ## What's Already Set Up
 
-* robot_world_app.rb (server file) in app/controllers
-* A robot model with a database reference in its initialize method
-* `application.css`
-* `index.erb` and `layout.erb`
-* `db` and `db/migrations` folders
-* `config.ru` and `Gemfile`
+A Project using C.R.U.D. (Create, Read, Update and Delete) in a Sinatra / Ruby web app.
+Come and play with FABULOUS ROBOTS! It's fun for the whole family!
 
-## Your Job
-
-CRUD out the functionality for a user to be able to add a robot (id, name, city, state, department), see all robots, edit a robot, and delete a robot.
+#### Joel Lindow
+Software Developer
