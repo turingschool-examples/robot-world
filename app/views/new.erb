@@ -1,0 +1,40 @@
+
+<div class="navbar navbar-inverse bg-inverse">
+  <div class="container d-flex justify-content-between">
+    <a href="/" class="navbar-brand">Back to Robots Dashboard</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4" align="left">
+    <img src="https://robohash.org/missy.png" alt="">
+  </div>
+
+  <div class="col-md-4" align="center">
+    <img src="https://robohash.org/redcarpet.png" alt="">
+  </div>
+
+  <div class="col-md-4" align="right">
+    <img src="https://robohash.org/sony.png" alt="">
+  </div>
+</div>
+
+
+<div class="jumbotron">
+  <div class="container" align="center">
+    <h1>Create a Robot</h1>
+
+    <form class="jumbotrone" action="/robots" method="post">
+      <input  type="hidden" name="_method" value="POST">
+      <label for="name">Name: </label>
+      <input type="text" name="robot[name]" value=""><br/>
+      <label for="city">City: </label>
+      <input type="text" name="robot[city]" value=""><br/>
+      <label for="">State: </label>
+      <input type="text" name="robot[state]" value=""><br/>
+      <label for="department">Department: </label>
+      <input type="text" name="robot[department]" value=""><br/>
+      <input class="btn btn-primary btn-lg" role="button" type="submit" value="Submit">
+    </form>
+  </div>
+</div>
