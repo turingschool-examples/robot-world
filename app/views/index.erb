@@ -1,8 +1,3 @@
-
-
-
-
-
   <body>
     <div class="navbar navbar-inverse bg-inverse">
       <div class="container d-flex justify-content-between">
@@ -29,12 +24,12 @@
       <div class="container">
         <div class="row">
             <% @robots.each do |robot| %>
-            <div class="card">
-            <img src="https://robohash.org/buddy.png" alt="Image of a Robot">
+            <div class="card" align="center">
+            <img src="https://robohash.org/<%= ("a".."z").to_a.shuffle[0..3].join %>.png" alt="Image of a Robot">
             <h3><a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
-            <p><%= robot.city %></p>
-            <p><%= robot.state %></p>
-            <p><%= robot.department %></p>
+            <h5 ><%= robot.city %></h5>
+            <h5><%= robot.state %></h5>
+            <h5><%= robot.department %></h5>
             <div class="btn btn-primary btn-lg btn-info" role="button">
               <a href="/robots/<%= robot.id %>/edit">Edit</a>
             </div>

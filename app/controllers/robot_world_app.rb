@@ -42,4 +42,8 @@ class RobotWorldApp < Sinatra::Base
     Robot.destroy(id.to_i)
     redirect '/robots'
   end
+
+  get '/maps' do
+    erb :maps
+  end
 end

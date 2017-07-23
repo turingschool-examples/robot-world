@@ -1,4 +1,5 @@
 require 'sqlite3'
+require 'will_paginate'
 
 class Robot
   attr_reader :name, :city, :state, :department, :id
