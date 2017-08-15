@@ -10,7 +10,7 @@ class RobotWorldApp < Sinatra::Base
     erb :index
   end
 
-  get '/robots/new_robot' do
+  get '/robots/new' do
     erb :new_robot
   end
 
@@ -32,7 +32,7 @@ class RobotWorldApp < Sinatra::Base
 
   put '/robots/:id' do |id|
     Robot.update(params[:id].to_i, params[:robot])
-    redirect '/robots/#{id}'
+    redirect "/robots/#{id}"
   end
 
   delete '/robots/:id' do |id|
@@ -40,5 +40,5 @@ class RobotWorldApp < Sinatra::Base
     redirect '/robots'
   end
 
-  #add all attributes, add styling, do some extensions
+  #add all attributes, add styling, do extensions
 end
